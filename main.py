@@ -17,14 +17,14 @@ board = [
 ]
 
 # Turn and GameOver Flage
-turn = "Black"
+turn = "White"
 gameOver = False
 
 # loop until the game is Over
-# while not gameOver:
-#     printBoard(board)
-#     f,t = askUserToGiveInput(turn)
-#     makeCoinFtoT(f,t,board)
+while not gameOver:
+    printBoard(board)
+    f,t = askUserToGiveInput(turn,board)
+    makeCoinFtoT(f,t,board)
 
 # printing game Over
 printGameOver()
