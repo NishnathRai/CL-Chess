@@ -1,6 +1,8 @@
 from functions.printBoard import printBoard
 from functions.askUserToGiveInput import askUserToGiveInput
 from functions.makeCoinFtoT import makeCoinFtoT
+from functions.printGameOver import printGameOver
+from functions.printWinPlayer import printWin
 
 # Initial board
 board = [
@@ -15,14 +17,18 @@ board = [
 ]
 
 # Turn and GameOver Flage
-turn = "White"
+turn = "Black"
 gameOver = False
 
 # loop until the game is Over
-while not gameOver:
-    printBoard(board)
-    f,t = askUserToGiveInput(turn)
-    makeCoinFtoT(f,t,board)
+# while not gameOver:
+#     printBoard(board)
+#     f,t = askUserToGiveInput(turn)
+#     makeCoinFtoT(f,t,board)
 
+# printing game Over
+printGameOver()
 
+#print win
+printWin(turn)
 
