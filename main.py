@@ -1,4 +1,4 @@
-from printBoard import printBoard
+from functions.printBoard import printBoard
 board = [
     ['WE', 'WN', 'WB', 'WQ', 'WK', 'WB', 'WN', 'WE'],  # White pieces
     ['WP', 'WP', 'WP', 'WP', 'WP', 'WP', 'WP', 'WP'],  # Black Pawns
