@@ -1,5 +1,6 @@
 from functions.printBoard import printBoard
 from functions.askUserToGiveInput import askUserToGiveInput
+from functions.makeCoinFtoT import makeCoinFtoT
 
 # Initial board
 board = [
@@ -20,8 +21,8 @@ gameOver = False
 # loop until the game is Over
 while not gameOver:
     printBoard(board)
-    askUserToGiveInput(turn)
-    break
+    f,t = askUserToGiveInput(turn)
+    makeCoinFtoT(f,t,board)
 
 
 
