@@ -22,11 +22,16 @@ gameOver = False
 
 # loop until the game is Over
 while not gameOver:
+    #Convert the bord to symboles and print it
     printBoard(board)
+    #takes user input and validate 
     f,t = askUserToGiveInput(turn,board)
+    #checks for game over condition
     if(board[int(t[0])][int(t[1])][1]=="K"):
         break
+    #makeing coin to move from f to t
     makeCoinFtoT(f,t,board)
+    #togleing the turn between white and black
     turn = "Black" if turn=="White" else "White"
 
 # printing game Over
