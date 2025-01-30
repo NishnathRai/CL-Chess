@@ -1,16 +1,16 @@
 mapOfSymbols = {
-    "WE": '♖',  # White Rook
-    "WN": '♘',  # White Knight
-    "WB": '♗',  # White Bishop
-    "WQ": '♕',  # White Queen
-    "WK": '♔',  # White King
-    "WP": '♙',  # White Pawn
-    "BE": '♜',  # Black Rook
-    "BN": '♞',  # Black Knight
-    "BB": '♝',  # Black Bishop
-    "BQ": '♛',  # Black Queen
-    "BK": '♚',  # Black King
-    "BP": '♟',  # Black Pawn
+    "BE": '♖',  # White Rook
+    "BN": '♘',  # White Knight
+    "BB": '♗',  # White Bishop
+    "BQ": '♕',  # White Queen
+    "BK": '♔',  # White King
+    "BP": '♙',  # White Pawn
+    "WE": '♜',  # Black Rook
+    "WN": '♞',  # Black Knight
+    "WB": '♝',  # Black Bishop
+    "WQ": '♛',  # Black Queen
+    "WK": '♚',  # Black King
+    "WP": '♟',  # Black Pawn
     "E": '.'    # Empty square (optional)
 }
 
