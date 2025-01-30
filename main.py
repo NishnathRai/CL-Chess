@@ -24,7 +24,10 @@ gameOver = False
 while not gameOver:
     printBoard(board)
     f,t = askUserToGiveInput(turn,board)
+    if(board[int(t[0])][int(t[1])][1]=="K"):
+        break
     makeCoinFtoT(f,t,board)
+    turn = "Black" if turn=="White" else "White"
 
 # printing game Over
 printGameOver()

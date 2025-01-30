@@ -49,7 +49,7 @@ def checkFromBox(f,board,turn):
 
 
 def askUserToGiveInput(turn,board):
-    print(f"\t\t\t\t Its {turn} { "♚" if turn=="White" else  "♔" } 's turn")
+    print(f"\t\t\t\t Its {turn} 's { "♚" if turn=="White" else  "♔" }  turn")
     print("\t\t\t\t Enter row and colloum num without space eg:'8e' ",end="\n\n")
     fromIsPossible = False
     while not fromIsPossible:
