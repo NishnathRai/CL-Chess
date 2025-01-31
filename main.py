@@ -28,7 +28,7 @@ while not gameOver:
     #takes user input and validate 
     f,t = askUserToGiveInput(turn,board)
     # checking the user move is valid or not
-    if(isValidMove(f,t,board)):
+    if( isValidMove(f,t,board) ):
         #checks for game over condition
         if( len(board[int(t[0])][int(t[1])])==2  and board[int(t[0])][int(t[1])][1]=="K" ):
             break
