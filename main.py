@@ -30,7 +30,7 @@ while not gameOver:
     # checking the user move is valid or not
     if(isValidMove(f,t,board)):
         #checks for game over condition
-        if( len(board[int(t[0])][int(t[1])])==2  and board[int(t[0])][int(t[1])][1]=="K"):
+        if( len(board[int(t[0])][int(t[1])])==2  and board[int(t[0])][int(t[1])][1]=="K" ):
             break
         #makeing coin to move from f to t
         makeCoinFtoT(f,t,board)
