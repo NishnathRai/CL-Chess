@@ -3,6 +3,7 @@ from functions.askUserToGiveInput import askUserToGiveInput
 from functions.makeCoinFtoT import makeCoinFtoT
 from functions.printGameOver import printGameOver
 from functions.printWinPlayer import printWin
+from functions.isValidMove import isValidMove
 
 # Initial board
 board = [
@@ -26,13 +27,15 @@ while not gameOver:
     printBoard(board)
     #takes user input and validate 
     f,t = askUserToGiveInput(turn,board)
-    #checks for game over condition
-    if(board[int(t[0])][int(t[1])][1]=="K"):
-        break
-    #makeing coin to move from f to t
-    makeCoinFtoT(f,t,board)
-    #togleing the turn between white and black
-    turn = "Black" if turn=="White" else "White"
+    # checking the user move is valid or not
+    if(isValidMove(f,t,board)):
+        #checks for game over condition
+        if( len(board[int(t[0])][int(t[1])])==2  and board[int(t[0])][int(t[1])][1]=="K"):
+            break
+        #makeing coin to move from f to t
+        makeCoinFtoT(f,t,board)
+        #togleing the turn between white and black
+        turn = "Black" if turn=="White" else "White"
 
 # printing game Over
 printGameOver()

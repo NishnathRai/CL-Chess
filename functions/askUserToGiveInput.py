@@ -54,7 +54,7 @@ def checkFromBox(f,board,turn):
 
 def askUserToGiveInput(turn,board):
     print(f"\t\t\t\t Its {turn} 's { "♚" if turn=="White" else  "♔" }  turn")
-    print("\t\t\t\t Enter row and colloum num without space ","eg:'87' 8 th Row and 7 th Colloum",sep="\n\t\t\t\t ",end="\n\n")
+    print("\t\t\t\t Enter row and colloum num without space ","eg:'57' 5 th Row and 7 th Colloum",sep="\n\t\t\t\t ",end="\n\n")
     fromIsPossible = False
     while not fromIsPossible:
         f = input("\t\t\t\t From -->  ")
