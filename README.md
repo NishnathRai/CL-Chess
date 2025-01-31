@@ -1,36 +1,19 @@
-# CL-Chess
-"""
-   a   b   c   d   e   f   g   h
-  ┌───┬───┬───┬───┬───┬───┬───┬───┐
-8 │ ♜ │ ♞ │ ♝ │ ♛ │ ♚ │ ♝ │ ♞ │ ♜ │ 8
-  ├───┼───┼───┼───┼───┼───┼───┼───┤
-7 │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ 7
-  ├───┼───┼───┼───┼───┼───┼───┼───┤
-6 │ . │ . │ . │ . │ . │ . │ . │ . │ 6
-  ├───┼───┼───┼───┼───┼───┼───┼───┤
-5 │ . │ . │ . │ . │ . │ . │ . │ . │ 5
-  ├───┼───┼───┼───┼───┼───┼───┼───┤
-4 │ . │ . │ . │ . │ . │ . │ . │ . │ 4
-  ├───┼───┼───┼───┼───┼───┼───┼───┤
-3 │ . │ . │ . │ . │ . │ . │ . │ . │ 3
-  ├───┼───┼───┼───┼───┼───┼───┼───┤
-2 │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ 2
-  ├───┼───┼───┼───┼───┼───┼───┼───┤
-1 │ ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖ │ 1
-  └───┴───┴───┴───┴───┴───┴───┴───┘
-   a   b   c   d   e   f   g   h
-""
-Unicode Chess Symbols:<br/>
-♔ (White King)<br/>
-♕ (White Queen)<br/>
-♖ (White Rook)<br/>
-♗ (White Bishop)<br/>
-♘ (White Knight)<br/>
-♙ (White Pawn)<br/>
-♚ (Black King)<br/>
-♛ (Black Queen)<br/>
-♜ (Black Rook)<br/>
-♝ (Black Bishop)<br/>
-♞ (Black Knight)<br/>
-♟ (Black Pawn)<br/>
+# CL_Chess: Command-Line Chess Game
 
+`CL_Chess` is a simple, interactive command-line chess game written in Python. It provides a text-based chessboard and allows users to play chess, displaying the current state of the game with Unicode chess pieces.
+
+## Installation
+
+You can install the `CL_Chess` package using `pip`:
+```bash
+pip install CL-Chess-Nishnath==1.3.2
+```
+
+## How to Use
+```python
+from CL_Chess import main
+main()
+```
+## Author
+```text
+- Nishnath Rai

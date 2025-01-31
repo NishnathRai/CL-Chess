@@ -1,4 +1,4 @@
-from functions.generateBoard import generateBoard
+from .generateBoard import generateBoard
 
 def printBoard(board):
     board = generateBoard( board )
